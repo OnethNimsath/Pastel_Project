@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1f1f1f; /* Dark background color */
+    padding: 10px 20px; /* Adjust padding for a more compact layout */
+}
+
+.navbar-brand img {
+    height: 40px; /* Adjust logo height */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500; /* Slightly bold */
+    margin-right: 25px; /* Space between links */
+    text-transform: uppercase; /* Make all nav items uppercase */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a8a8a8; /* Slightly lighter on hover */
+}
+
+/* Heading section */
+section.text-center h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+section.text-center p.lead {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+section.text-center p {
+    color: #666;
+}
+
+/* Project Cards Section */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.img-card {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.img-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.img-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.img-text {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer ul {
+        margin-bottom: 20px;
+    }
+}
