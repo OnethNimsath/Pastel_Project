@@ -6,33 +6,14 @@ body{
     color: #333;
 }
 
-.loader{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container h1{
+    text-align: left;
 }
 
-.loader .logo{
-    width: 150px;
-    animation: spin 2s infinite linear;
+.container p{
+    margin-top: 5px;
+    text-align: left;
 }
-
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
 /* Navbar */
 .navbar {
     background-color: #1f1f1f; /* Dark background color */
