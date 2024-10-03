@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 1.5rem;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin-left: 1.5rem;
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainimg img{
+    width: 100%;
+    height: auto;
+}
+
+.project-info{
+    padding: 2rem 0;
+}
+
+.project-info h1{
+    margin-bottom: 1rem;
+}
+
+.project-details{
+    margin-bottom: 1rem;
+}
+
+.project-details li{
+    margin-bottom: 0.5rem;
+}
+
+.gallery{
+    padding: 2rem 0;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .services,
+footer .contact{
+    width: 45%;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .services,
+    footer .contact {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-info,
+    .gallery {
+        padding: 1rem 0;
+    }
+}
